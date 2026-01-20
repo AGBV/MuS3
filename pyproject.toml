@@ -1,0 +1,28 @@
+[project]
+name = "mus3"
+version = "0.1.0"
+description = "Modellierung und Simulation Signalverarbeitender Systeme"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  # jupyter
+  "jupyter>=1.1.1",
+  "nbqa>=1.9.1",
+  "ruff>=0.14.3",
+  "black>=25.9.0",
+  # scientific
+  "numba>=0.62.1",
+  "numpy>=2.3.4",
+  "plotly>=6.3.1",
+  "scipy>=1.16.3",
+  "streamlit>=1.50.0",
+  "lcapy>=1.26",
+  "pandoc>=2.4",
+  "nbconvert[qtpdf,webpdf]>=7.16.6",
+  "scikit-image>=0.26.0",
+]
+
+[tool.pyright]
+exclude = [".venv"]
+venvPath = ".venv"
+venv = "."
